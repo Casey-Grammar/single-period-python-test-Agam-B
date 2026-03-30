@@ -18,6 +18,20 @@
 
 def expand_subject_codes(codes):
     # Write your code here
+    listed = []
+    for value in codes:
+        value = value.upper()
+        if value == 'ENG':
+            listed.append('English')
+        elif value == 'MAT':
+            listed.append('Mathematics')
+        elif value == 'SCI':
+            listed.append('Science')
+        elif value == 'HIS':
+            listed.append('History')
+        elif value == 'ART':
+            listed.append('Art')
+    return(listed)
     pass
 
 

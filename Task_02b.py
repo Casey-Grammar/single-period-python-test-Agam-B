@@ -8,6 +8,11 @@
 
 def extract_even_numbers(numbers):
     # Write your code here
+    list = []
+    for number in numbers:
+        if number % 2 == 0:
+            list.append(number)
+    return(list)
     pass
 
 
@@ -15,6 +20,7 @@ def main():
     user_input = input("Enter numbers separated by commas: ")
     numbers = [int(x.strip()) for x in user_input.split(",") if x.strip() != ""]
     print(extract_even_numbers(numbers))
+
 
 
 if __name__ == "__main__":

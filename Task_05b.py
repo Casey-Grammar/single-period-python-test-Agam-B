@@ -9,6 +9,11 @@
 
 def unique_items(items):
     # Write your code here
+    listed = []
+    for item in items:
+        if not item in listed:
+            listed.append(item)
+    return(listed)
     pass
 
 

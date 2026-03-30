@@ -10,6 +10,21 @@
 
 def count_vowels(text):
     # Write your code here
+    text = text.lower()
+    letters = list(text) 
+    count = 0
+    for value in letters:
+        if value == 'a':
+            count += 1
+        elif value == 'e':
+            count += 1
+        elif value == 'i':
+            count += 1
+        elif value == 'o':
+            count += 1
+        elif value == 'u':
+            count += 1
+    return count
     pass
 
 

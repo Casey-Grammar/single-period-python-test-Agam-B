@@ -9,6 +9,11 @@
 
 def find_largest(numbers):
     # Write your code here
+    first = numbers[0]
+    for number in numbers:
+        if number > first:
+            first = number
+    return(first)
     pass
 
 

@@ -13,6 +13,12 @@
 
 def replace_book(books, old_book, new_book):
     # Write your code here
+    if old_book in books:
+        book_number = books.index(old_book)
+        books[book_number] = new_book
+        return(books)
+    else:
+        return(books)
     pass
 
 
@@ -23,7 +29,7 @@ def main():
     new_book = input("Enter the new book title: ")
 
     updated_books = replace_book(books, old_book, new_book)
-    print(updated_books)
+    
 
 
 if __name__ == "__main__":
